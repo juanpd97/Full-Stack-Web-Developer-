@@ -13,14 +13,68 @@
         font-family: "Sono", sans-serif;
       }
 
+      .pricing-container{
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .pricing-plan{
+        background-color: rgba(187, 187, 187, 0.53);
+        margin: 25px;
+        width: 25%;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+        text-align: center;
+      }
+
+      li{
+        list-style: none;
+      }
+
+      .plan-button{
+        background-color: rgba(255, 123, 0, 0.67);
+        border-radius: 20px;
+        margin: 10px;
+      }
+
+      .plan-title{
+        font-weight: 800;
+      }
+      .plan-price{
+        font-size: x-large;
+        font-weight: bolder;
+      }
+
       /* Hint: What can you do with a media query and flexbox? */
       @media (max-width: 1250px) {
+        .pricing-container{
+        display: flex;  
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .pricing-plan{
+        background-color: rgba(187, 187, 187, 0.53);
+        margin: 25px;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+        /* text-align: center; */
+        width: 25%;
+      }
+
       }
     </style>
   </head>
 
   <body>
     <div class="pricing-container">
+
       <div class="pricing-plan">
         <div class="plan-title">Basic</div>
         <div class="plan-price">$9.99/month</div>

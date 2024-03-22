@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .conteiner{
+      background-color: black;
+      display: grid;
+      height: 748px;
+      width: 748px;
+      gap: 9px;
+      grid-template-rows: 414px 130px 155px 20px;
+      grid-template-columns: 320px 198px 153px 50px;
+    }
+    .amarillo{
+      background-color: #F9D01E;
+    }
+    .azul{
+      background-color: #004592;
+      border-bottom: 10px solid #000;
+    }
+    .negro{
+      background-color: #232629;
+    }
+    .blanco{
+      background-color: #F0F1EC;
+    }
+    .rojo{
+      background-color: #E72F24;
+      grid-column: 1/2;
+    }
+
+    .cuadradoArriba{
+      grid-column: 2/5;
+    }
+
+    .cuadradoMedio1{
+      grid-column: 1/2;
+      grid-row: 2/4;
+    }
+    .cuadradoMedio2{
+      grid-column: 2 / 4;
+      grid-row: 2 / 4;
+    }
+    .cuadradoMedio3{
+      grid-column: 4 / 5;
+      grid-row: 2 / 3;
+      
+    }
+    .cuadradoMedio4{
+      grid-column: 4 / 5;
+      grid-row: 3/5;
+    }
+    .cuadradoAbajo1{
+      grid-column: 1/2;
+      grid-row: 4/5;
+    }
+    .cuadradoAbajo2{
+      grid-column: 2/3;
+      grid-row: 4/5;
+    }
+    .cuadradoAbajo3{
+      
+      grid-column: 3/4;
+      grid-row: 4/5;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Write your HTML here -->
+  <div class="conteiner">
+    <div class="cuadrado rojo"></div>
+    <div class="cuadrado blanco cuadradoArriba"></div>
+    <div class="cuadrado blanco cuadradoMedio1"></div>
+    <div class="cuadrado blanco cuadradoMedio2"></div>
+    <div class="cuadrado blanco cuadradoMedio4"></div>
+    <div class="cuadrado blanco cuadradoAbajo1"></div>
+    <div class="cuadrado amarillo cuadradoAbajo2"></div>
+    <div class="cuadrado negro cuadradoAbajo3"></div>
+    <div class="cuadrado azul cuadradoMedio3"></div>
+  </div>
+
+</body>
+
+</html>
